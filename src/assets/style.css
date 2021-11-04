@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mainPage{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./img/main.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginPage{
+    width: 50%;
+    height: 75vh;
+    margin: auto;
+    background: linear-gradient(to top left , rgb(64, 123, 127), rgb(28, 51, 59));
+    border-radius: 10px;
+    padding: 0rem 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    transition: all 0.3s;
+}
+
+.quizPage{
+    height: 80vh;
+}
+
+.containerLogin{
+    width: 45%;
+    height: auto;
+    padding-top: 2.5rem;
+}
+
+.containerQuestion{
+    width: 90%;
+}
+
+.loginH1{
+    width: fit-content;
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    color: white;
+    font-size: 78px;
+    margin: auto;
+    text-align: center;
+    position: absolute;
+    top: 5rem;
+    transition: all 0.3s;
+}
+
+.authH1{
+    font-size: 54px;
+    top: 4rem;
+}
+
+.marksH1{
+    top: 2rem;
+    font-size: 42px;
+}
+
+.emptyQuizH1{
+    width: fit-content;
+    margin: auto;
+    font-size: 26px;
+    color: #eeeeee;
+    font-weight: 600;
+}
+
+.studentQuizH1{
+    top: 3rem;
+}
+
+@media only screen and (max-width: 655px) {
+    .marksH1{
+        font-size: 32px;
+    }
+}
+
+.loginPage h2{
+    width: fit-content;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    color: white;
+    font-size: 34px;
+    margin: auto;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.loginPage span{
+    font-weight: 400;
+    font-size: 42px;
+}
+
+.startBtn{
+    padding: 0.6rem 1.5rem;
+    box-sizing: border-box;    
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 5rem;
+    background-color: white;
+    color: #292929;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.startBtn:hover{
+    background-color: #292929;
+    cursor: pointer;
+    color: white;
+}
+
+.optionBtn{    
+    border: none !important;
+    outline: none !important;
+    border-radius: 5px !important;
+    background-color: white !important;
+    color: #292929 !important;
+    letter-spacing: 1px !important;
+    transition: all 0.3s !important;
+}
+
+.optionBtn:hover{
+    background-color: #292929 !important;
+    cursor: pointer !important;
+    color: white !important;
+}
+
+.optionBtn:disabled{
+    background-color: rgb(171, 174, 177) !important;
+    color: #292929 !important;
+}
+
+@media only screen and (max-width: 1200px){
+    .loginPage{
+        width: 100% !important;
+    }
+}
+
+.teacherContainer{
+    padding-top: 3.5rem;
+    box-sizing: border-box;
+}
+
+.inputText{
+    width: fit-content;
+    text-align: left;
+    position: relative;
+    top: 0.4rem;
+    left: 0.1rem;
+    color: #eeeeee;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 0%;
+}
+
+.loginBtn{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+}
+
+.submitBtn{
+    width: 50%;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+
+.ContainerQuestion p{
+    margin-top: 0rem !important;   
+}
+
+.backBtn{
+    margin-top: 0.8rem;
+    background-color: #292929;
+    color: #eeeeee;
+}
+
+.backBtn:hover{
+    background-color: #eeeeee;
+    color: #292929;
+}
+
+.studentBtn{
+    background-color: #292929;
+    color: #eeeeee;
+    margin-top: 1rem;
+}
+
+.studentBtn:hover{
+    background-color: #eeeeee;
+    color: #292929;
+}
+
+.teacherDashboard{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top right , rgba(28, 51, 59,0.7), rgba(64, 123, 127,0.7)), url(./img/main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    padding: 2rem 6rem !important;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+.teacherDetailsSide{
+    width: 100% !important;
+    height: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    background: linear-gradient(to top right,gray,#eeeeee);
+    box-shadow: 0px 0px 10px #292929;
+    border-radius: 10px;
+}
+
+.profileH1{
+    margin-bottom: 2.5rem !important;
+    font-size: 28px !important;
+}
+
+.teacherImage{
+    width: 100px;
+    height: 100px;
+    background-image: url(./img/pic1.png);
+    background-size: 100% 100%;
+    border: 5px solid #292929;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.teacherDetailsSide h1{
+    width: fit-content;
+    margin: auto;
+    margin-top: 1.5rem;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.teacherDetailsSide h2{
+    width: fit-content;
+    margin: auto;
+    margin-top: 0.3rem;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.teacherDetailsSide p{
+    width: fit-content;
+    margin: auto;
+    margin-top: 0.2rem;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hrLine{
+    width: 100%;
+    height: 2px;
+    background-color: #292929;
+    margin: 1rem auto;
+}
+
+.teacherDetailsSide h3{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    margin-top: 0.3rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.teacherDetailsSide h4{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    margin-top: 0.3rem;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.teacherOperationsSide{
+    width: auto;
+    height: 100%;
+    padding: 0rem 2rem;
+    padding-bottom: 2rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2,35%);
+    justify-content:space-around;
+}
+
+.addBtn{
+    width: 100%;
+    height: 13rem;
+    border: none;
+    outline: none;
+    margin-top: 2rem;
+    border-radius: 10px;
+    color: #292929;
+    background: linear-gradient(to top right,gray,#eeeeee);
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.addBtn:hover{
+    cursor: pointer;
+    background: #292929;
+    color: white;
+}
+
+.welcomH1{
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+.quizh1{
+    margin-bottom: 2rem;
+}
+
+.quizContainer{
+    width: 100%;
+    height: 73vh;
+    overflow-y: scroll;
+    padding: 0rem 3rem;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #292929;
+    display: grid;
+    grid-template-columns: repeat(3,30%);
+    justify-content: space-between;
+}
+
+.quizContainer::-webkit-scrollbar {
+    width: 13px;               /* width of the entire scrollbar */
+}
+  
+.quizContainer::-webkit-scrollbar-track {
+    background: #292929;
+}
+  
+.quizContainer::-webkit-scrollbar-thumb {
+    background-color: #eeeeee;
+    border-radius: 10px;    /* color of the scroll thumb */
+}
+
+.addClickBtn{
+    width: 12rem;
+    height: 40px;
+    margin-top: 1.3rem;
+    padding: 0% 1.3rem;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.3s;
+    position: absolute;
+    right: 6rem;
+}
+
+.addClickBtn:hover{
+    cursor: pointer;
+    background-color: #292929;
+    color: rgb(255, 166, 0);
+}
+
+.addDiv,.newDiv{
+    width: 100%;
+    height: 13rem;
+    border: none;
+    outline: none;
+    margin-top: 3rem;
+    border-radius: 10px;
+    text-align: center;
+    color: #292929;
+    background: linear-gradient(to top right,gray,#eeeeee);
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.addDiv:hover, .newDiv:hover{
+    cursor: pointer;
+    background: #292929;
+    color: rgb(255, 166, 0);
+}
+
+.quizH1{
+    width: fit-content;
+    margin: 2rem auto;
+    font-size: 36px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.addDiv:hover .quizh1{
+    color: rgb(255, 166, 0);
+}
+
+.editBtn{
+    width: 80%;
+    height: 2.2rem;
+    margin: auto;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    color: #292929;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.editBtn:hover{
+    background-color: rgb(255, 166, 0);
+    color: #292929;
+}
+
+.flexDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+@media only screen and (max-width: 992px) {
+    .teacherDashboard{
+        height: auto;
+        padding: 2rem;
+    }
+
+    .teacherOperationsSide{
+        padding: 0% !important;
+    }
+    .addBtn{
+        width: 100%;
+    }
+}
